@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Santiago Borgna</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <a href="#"><img src="Images/logo.jpg"></a>
+            </div>
+            <nav>
+                <ul class = "nav-links">
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- <a href="https://github.com/SantiagoBorgna" class="btn"><button>Contacts</button></a> -->
+            <a onclick="openNav()" href="#" class="menu"><button>≡</button></a>
+
+            <div class="overlay" id="mobile-menu">
+                <a onclick="closeNav()" href="#" class="close">X</a>
+                <div class="overlay-content">
+                    <a onclick="closeNav()" href="#about-me">About me</a>
+                    <a onclick="closeNav()" href="#projects">Projects</a>
+                    <a onclick="closeNav()" href="#education">Education</a>
+                    <a onclick="closeNav()" href="#skills">Skills</a>
+                    <a onclick="closeNav()" href="#contact">Contact</a>
+                </div>
+            </div>
+        </header>
+
+        <div id="about-me" class="info">
+            <h1>ABOUT ME</h1>
+
+            <div class="container">
+                <div id="info-text">
+                    <p>roevnqeruvnqeourvnqouecnqourvncoue Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis ullamcorper velit. Cras id erat pretium nunc mollis aliquam. Mauris quis dictum nulla. Maecenas vel porta tellus. Pellentesque ac nisi accumsan, vulputate augue ut, venenatis metus. Curabitur dapibus, ligula eget luctus imperdiet, libero sapien pellentesque velit, id vehicula mi felis vitae mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris neque est, molestie consectetur dolor id, ultricies maximus tellus. Vivamus ipsum urna, accumsan eget ornare sit amet, venenatis in ipsum. Morbi lacinia vehicula libero vel laoreet. Ut posuere ante et lorem faucibus, quis sagittis odio sollicitudin. Nam lacinia dui ipsum, non rutrum enim tempus vel.</p>
+                    <p>Etiam eget laoreet purus. Aenean vitae enim egestas, finibus sapien sit amet, mollis dolor. Vestibulum orci velit, facilisis a condimentum eget, posuere at diam. Fusce venenatis, mi in pellentesque vulputate, neque augue pharetra sem, ut luctus magna ex vitae dui. Aliquam sollicitudin bibendum dolor at viverra. Nam convallis vulputate ultrices. Nullam eget urna turpis. Nulla eu turpis egestas, elementum quam quis, suscipit purus. Sed eget ligula sed risus imperdiet lobortis a in velit.</p>    
+                    <p>Thank you for joining me on this exciting path of discovery and innovation.</p>
+                </div>
+                <img id="image" src="Images/man.jpeg">
+            </div>
+
+        </div>
+
+        <div id="projects" class="projects">
+            <h1>PROJECTS</h1>
+            
+            <div class="cards-container">
+                <div class="card">
+                    <img src="Images/notes.png">
+                    <h4>Primera card</h4>
+                    <p>Etiam eget laoreet purus. Aenean vitae enim egestas, finibus sapien sit amet, mollis dolor. Vestibulum orci velit, facilisis a condimentum eget, posuere at diam. Fusce venenatis, mi in pellentesque vulputate, neque augue pharetra sem, ut luctus magna ex vitae dui. Aliquam sollicitudin bibendum dolor at viverra. Nam convallis vulputate ultrices. Nullam eget urna turpis. Nulla eu turpis egestas, elementum quam quis, suscipit purus. Sed eget ligula sed risus imperdiet lobortis a in velit</p>
+
+                    <a href="#"><button>Read more</button></a>
+                </div>
+
+                <div class="card">
+                    <img src="Images/library.png">
+                    <h4>Segunda card</h4>
+                    <p>Etiam eget laoreet purus. Aenean vitae enim egestas, finibus sapien sit amet, mollis dolor. Vestibulum orci velit, facilisis a condimentum eget, posuere at diam. Fusce venenatis, mi in pellentesque vulputate, neque augue pharetra sem, ut luctus magna ex vitae dui. Aliquam sollicitudin bibendum dolor at viverra. Nam convallis vulputate ultrices. Nullam eget urna turpis. Nulla eu turpis egestas, elementum quam quis, suscipit purus. Sed eget ligula sed risus imperdiet lobortis a in velit</p>
+
+                    <a href="#"><button>Read more</button></a>
+                </div>
+
+                <div class="card">
+                    <img src="Images/java.png">
+                    <h4>Tercera card</h4>
+                    <p>Etiam eget laoreet purus. Aenean vitae enim egestas, finibus sapien sit amet, mollis dolor. Vestibulum orci velit, facilisis a condimentum eget, posuere at diam. Fusce venenatis, mi in pellentesque vulputate, neque augue pharetra sem, ut luctus magna ex vitae dui. Aliquam sollicitudin bibendum dolor at viverra. Nam convallis vulputate ultrices. Nullam eget urna turpis. Nulla eu turpis egestas, elementum quam quis, suscipit purus. Sed eget ligula sed risus imperdiet lobortis a in velit</p>
+
+                    <a href="#"><button>Read more</button></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="data">
+            <div id="education" class="education">
+                <h1>EDUCATION</h1>
+
+                <div class="education-container">
+                    <h3>Software Engineering</h3>
+                    <p>21st Century University</p>
+                    <p>2023 - Current</p>
+                    <hr>
+                    <h3>Diploma in Java Programming</h3>
+                    <p>UTN BA</p>
+                    <p>2022</p>
+                </div>
+            </div>
+    
+            <div id="skills" class="skills">
+                <h1>SKILLS</h1>
+
+                <div class="skills-container">
+                    <h3>Backend</h3>
+                    <p>Java</p>
+                    <p>Spring boot</p>
+                    <p>Hibernate</p>
+                    <p>MySQL</p>
+                    <hr>
+                    <h3>Frontend</h3>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <P>JavaScript</P>
+                    <hr>
+                    <h3>Soft skills</h3>
+                    <p>Teamwork</p>
+                    <p>Adaptability</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="contact">
+            <h1>CONTACT</h1>
+
+            <div class="contact-container">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <div class="contact-form-title">
+                        <h2>Get in touch</h2>
+                        <hr>
+                    </div>
+                    <input type="hidden" name="access_key" value="ab6948b4-210c-4d9c-a43a-a1900921fdea">
+
+                    <input type="text" name="name" placeholder="Your Name" class="contact-input" required autocomplete="off">
+                    <input type="email" name="email" placeholder="Your Email" class="contact-input" required autocomplete="off">
+                    <textarea name="message" placeholder="Your Message" class="contact-input" required autocomplete="off"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p class="footer-left">Copyright ©2024-Santiago Borgna</p>
+            <div class="footer-right">
+                <a href="https://github.com/SantiagoBorgna" class="btn"><button><img src="Images/github.png"></button></a>
+                <a href="https://www.linkedin.com/in/santiago-borgna/" class="btn"><button><img src="Images/linkedin negro.png"></button></a>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="nav.js"></script>
+    </body>
+</html>
