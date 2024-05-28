@@ -7,11 +7,24 @@
 }
 
 body{
-    background-color:grey;
+    background-color:#003C43;
+}
+
+h2, h3, button{
+    font-family: "Open Sans", sans-serif;
+}
+
+h4{
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+}
+
+p{
+    font-family: "Open Sans", sans-serif;
 }
 
 .header{
-    background-color:grey;
+    background-color:#003C43;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,7 +71,7 @@ body{
 
 .header .nav-links a{
     font-size: 700;
-    color: white;
+    color: #F8F6E3;
 }
 
 .menu{
@@ -75,26 +88,22 @@ body{
     }
 }
 
-/*Nav*/
+/*Mobile nav*/
 .header a{
+    font-family: "Open Sans", sans-serif;
     text-decoration: none;
-    color: white;
+    color: #F8F6E3;
 }
 
 .header .menu button{
     margin-left: 20px;
-    color: white;
+    color: #003C43;
     padding: 9px 25px;
-    background-color: darkgrey;
+    background-color: #F8F6E3;
     border: none;
     border-radius: 9px;
     cursor: pointer;
-    /*transition: all 0.3s ease 0s;*/
 }
-
-/*.header .menu button:hover{
-    transform: scale(1.1);
-}*/
 
 .header .overlay{
     height: 100%;
@@ -103,7 +112,7 @@ body{
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: green;
+    background-color: #003C43;
     overflow: hidden;
     transition: all 0.3s ease 0s;
 }
@@ -116,41 +125,40 @@ body{
     justify-content: center;
 } 
 
-.header .overlay a{
+.header .overlay .overlay-content a{
     padding: 15px;
     font-size: 36px;
     display: block;
     transition: all 0.3s ease 0s;
-    color: white;
+    color: #F8F6E3;
 }
 
 .header .overlay a:hover,
 .header .overlay a:focus{
-    color: white;
+    color: #F8F6E3;
 }
 
-.header .overlay .close{
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 65px;
+.header .overlay .close button{
+    margin-left: 30px;
+    color: #003C43;
+    padding: 9px 14px;
+    background-color: #F8F6E3;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 30px;
 }
 
 @media screen and (max-height: 450px){
     .header .overlay a{
         font-size: 20px;
     }
-    .header .overlay .close{
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
 }
 
 /* About me */
 
 .info{
-    background-color: white;
+    background-color: #F8F6E3;
     padding-left: 150px;
 }
 
@@ -172,10 +180,14 @@ body{
     padding-bottom: 30px;
 }
 
+.info .container #info-text{
+    margin-top: 10px;
+}
+
 .info #image{
     margin-right: 5px;
     width: 600px;
-    height: 800px;
+    height: 700px;
 }
 
 @media screen and (max-width: 1200px){
@@ -212,7 +224,8 @@ body{
 /* Projects */
 
 .projects{
-    background-color:grey;
+    background-color:#003C43;
+    color: #F8F6E3;
     text-align: center;
     line-height: 1.6;
 }
@@ -234,8 +247,7 @@ body{
 }
 
 .cards-container .card{
-    background-color: white;
-    width: 430px;
+    width: 450px;
     height: auto;
     border-radius: 8px;
     overflow: hidden;
@@ -246,22 +258,33 @@ body{
 .cards-container .card img{
     height: 100px;
     width: 100px;
+    margin-top: 10px;
 }
 
 .cards-container .card h4{
     margin: 10px;
+    padding-bottom: 5px;
 }
 
 .cards-container .card p{
     padding: 0 1.5rem;
+    font-size: 14px;
+}
+
+.cards-container .card .description{
     font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.cards-container .card #library{
+    padding-bottom: 25px;
 }
 
 .cards-container .card button{
-    color: white;
+    color: #003C43;
     padding: 9px 20px;
     margin: 7px;
-    background-color: darkgrey;
+    background-color: #F8F6E3;
     border: none;
     border-radius: 9px;
     cursor: pointer;
@@ -269,7 +292,7 @@ body{
 /* Data */
 
 .data{
-    background-color: white;
+    background-color: #F8F6E3;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -316,6 +339,10 @@ body{
     flex-direction: column;
 }
 
+.education .year{
+    font-size: 17px;
+}
+
 /* Skills */
 
 .skills{
@@ -330,20 +357,29 @@ body{
 }
 
 .skills .skills-container{
-    width: 400px;
+    width: auto;
     height: auto;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    justify-content: center;
+}
+
+.skills .skills-container .hard{
+    margin: 0 30px;
+}
+
+.skills .skills-container .soft{
+    margin: 0 30px;
 }
 
 /* Contact */
 
 .contact{
-    background-color:grey;
+    background-color:#003C43;
+    color: #F8F6E3;
     text-align: center;
     line-height: 1.6;
 }
@@ -380,7 +416,7 @@ body{
     border: none;
     width: 130px;
     height: 5px;
-    background-color: black;
+    background-color: #F8F6E3;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -396,7 +432,7 @@ body{
 }
 
 .contact-container .contact-form .contact-input:focus{
-    background-color: wheat;
+    background-color: #F8F6E3;
 }
 
 .contact-container .contact-form textarea{
@@ -411,9 +447,9 @@ body{
 }
 
 .contact-container .contact-form button{
-    color: white;
+    color: #003C43;
     padding: 9px 20px;
-    background-color: darkgrey;
+    background-color: #F8F6E3;
     border: none;
     border-radius: 9px;
     cursor: pointer;
@@ -429,7 +465,8 @@ body{
 /* Footer */
 
 .footer{
-    background-color: grey;
+    background-color: #003C43;
+    color: #F8F6E3;
     margin-top: 35px;
     margin-bottom: 5px;
     display: flex;

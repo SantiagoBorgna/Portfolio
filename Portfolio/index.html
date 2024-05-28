@@ -5,18 +5,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Santiago Borgna</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">  
     </head>
     <body>
         <header class="header">
             <div class="logo">
-                <a href="#"><img src="Images/logo.jpg"></a>
+                <a href="#"><img src="Images/logo.png"></a>
             </div>
             <nav>
                 <ul class = "nav-links">
                     <li><a href="#about-me">About me</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#Tech-stack">Tech stack</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -24,12 +28,12 @@
             <a onclick="openNav()" href="#" class="menu"><button>≡</button></a>
 
             <div class="overlay" id="mobile-menu">
-                <a onclick="closeNav()" href="#" class="close">X</a>
+                <a onclick="closeNav()" href="#" class="close" id="close-btn"><button>X</button></a>
                 <div class="overlay-content">
                     <a onclick="closeNav()" href="#about-me">About me</a>
                     <a onclick="closeNav()" href="#projects">Projects</a>
                     <a onclick="closeNav()" href="#education">Education</a>
-                    <a onclick="closeNav()" href="#skills">Skills</a>
+                    <a onclick="closeNav()" href="#Tech-stack">Tech stack</a>
                     <a onclick="closeNav()" href="#contact">Contact</a>
                 </div>
             </div>
@@ -40,11 +44,12 @@
 
             <div class="container">
                 <div id="info-text">
-                    <p>roevnqeruvnqeourvnqouecnqourvncoue Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis ullamcorper velit. Cras id erat pretium nunc mollis aliquam. Mauris quis dictum nulla. Maecenas vel porta tellus. Pellentesque ac nisi accumsan, vulputate augue ut, venenatis metus. Curabitur dapibus, ligula eget luctus imperdiet, libero sapien pellentesque velit, id vehicula mi felis vitae mi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris neque est, molestie consectetur dolor id, ultricies maximus tellus. Vivamus ipsum urna, accumsan eget ornare sit amet, venenatis in ipsum. Morbi lacinia vehicula libero vel laoreet. Ut posuere ante et lorem faucibus, quis sagittis odio sollicitudin. Nam lacinia dui ipsum, non rutrum enim tempus vel.</p>
-                    <p>Etiam eget laoreet purus. Aenean vitae enim egestas, finibus sapien sit amet, mollis dolor. Vestibulum orci velit, facilisis a condimentum eget, posuere at diam. Fusce venenatis, mi in pellentesque vulputate, neque augue pharetra sem, ut luctus magna ex vitae dui. Aliquam sollicitudin bibendum dolor at viverra. Nam convallis vulputate ultrices. Nullam eget urna turpis. Nulla eu turpis egestas, elementum quam quis, suscipit purus. Sed eget ligula sed risus imperdiet lobortis a in velit.</p>    
-                    <p>Thank you for joining me on this exciting path of discovery and innovation.</p>
+                    <p>Welcome to my portfolio! I'm Santiago Borgna, a dedicated Junior Backend Developer based in Córdoba, Argentina. My journey in the world of software development has been driven by a relentless pursuit of innovation and a deep-seated passion for crafting solutions that make a difference.</p>
+                    <p>What sets me apart is my collaborative spirit and adaptability. Thriving in team environments, I leverage my leadership qualities to deliver high-quality solutions within deadlines. Proficient in Java, SQL, Spring Boot, and various web technologies, I prioritize continuous learning and professional growth to stay ahead in the ever-evolving tech landscape.</p>    
+                    <p>Armed with a Diploma in Java Programming and pursuing a Bachelor's degree in Software Engineering, my technical expertise is complemented by a commitment to excellence. Fluent in Spanish and with intermediate proficiency in English, I'm poised to contribute effectively to dynamic projects in the Java development sphere.</p>
+                    <p>Thank you for joining me on this exciting path of discovery and innovation. Let's collaborate and bring innovative ideas to life!</p>
                 </div>
-                <img id="image" src="Images/man.jpeg">
+                <img id="image" src="Images/I3.png">
             </div>
 
         </div>
@@ -53,26 +58,33 @@
             <h1>PROJECTS</h1>
             
             <div class="cards-container">
-                <div class="card">
-                    <img src="Images/notes.png">
-                    <h4>Primera card</h4>
-                    <p>Etiam eget laoreet purus. Aenean vitae enim egestas, finibus sapien sit amet, mollis dolor. Vestibulum orci velit, facilisis a condimentum eget, posuere at diam. Fusce venenatis, mi in pellentesque vulputate, neque augue pharetra sem, ut luctus magna ex vitae dui. Aliquam sollicitudin bibendum dolor at viverra. Nam convallis vulputate ultrices. Nullam eget urna turpis. Nulla eu turpis egestas, elementum quam quis, suscipit purus. Sed eget ligula sed risus imperdiet lobortis a in velit</p>
-
-                    <a href="#"><button>Read more</button></a>
-                </div>
 
                 <div class="card">
                     <img src="Images/library.png">
-                    <h4>Segunda card</h4>
-                    <p>Etiam eget laoreet purus. Aenean vitae enim egestas, finibus sapien sit amet, mollis dolor. Vestibulum orci velit, facilisis a condimentum eget, posuere at diam. Fusce venenatis, mi in pellentesque vulputate, neque augue pharetra sem, ut luctus magna ex vitae dui. Aliquam sollicitudin bibendum dolor at viverra. Nam convallis vulputate ultrices. Nullam eget urna turpis. Nulla eu turpis egestas, elementum quam quis, suscipit purus. Sed eget ligula sed risus imperdiet lobortis a in velit</p>
+                    <h4>library inventory management system</h4>
+                    <p class="description" id="library">A software app designed to streamline the workflow of library operations, specifically tailored for library workers. This system empowers library staff to efficiently manage book loans and returns, thereby enhancing the overall organizational efficiency of the library.</p>
+                    <p>Java, SQLite</p>
+                    <p>2023</p>
 
-                    <a href="#"><button>Read more</button></a>
+                    <a href="https://github.com/SantiagoBorgna/Inventario"><button>Read more</button></a>
                 </div>
 
                 <div class="card">
-                    <img src="Images/java.png">
-                    <h4>Tercera card</h4>
-                    <p>Etiam eget laoreet purus. Aenean vitae enim egestas, finibus sapien sit amet, mollis dolor. Vestibulum orci velit, facilisis a condimentum eget, posuere at diam. Fusce venenatis, mi in pellentesque vulputate, neque augue pharetra sem, ut luctus magna ex vitae dui. Aliquam sollicitudin bibendum dolor at viverra. Nam convallis vulputate ultrices. Nullam eget urna turpis. Nulla eu turpis egestas, elementum quam quis, suscipit purus. Sed eget ligula sed risus imperdiet lobortis a in velit</p>
+                    <img src="Images/notes.png">
+                    <h4>notes generation app</h4>
+                    <p class="description">A comprehensive digital tool designed to enhance the academic experience of students by providing a streamlined platform for organizing, creating, and accessing their notes. This application offers a user-friendly interface coupled with robust functionality to cater to the diverse needs of students across various educational levels.</p>
+                    <p>Java, Spring Boot, MySQL, HTML, CSS, JavaScript.</p>
+                    <p>2023</p>
+
+                    <a href="https://github.com/SantiagoBorgna/Notes-app"><button>Read more</button></a>
+                </div>
+
+                <div class="card">
+                    <img src="Images/tic-tac-toe.png">
+                    <h4>tic tac toe</h4>
+                    <p class="description">Something something</p>
+                    <p>Java, SQLite</p>
+                    <p>2024</p>
 
                     <a href="#"><button>Read more</button></a>
                 </div>
@@ -87,33 +99,49 @@
 
                 <div class="education-container">
                     <h3>Software Engineering</h3>
-                    <p>21st Century University</p>
-                    <p>2023 - Current</p>
+                    <p>Universidad Siglo 21</p>
+                    <p class="year">2023 - Present day</p>
                     <hr>
                     <h3>Diploma in Java Programming</h3>
-                    <p>UTN BA</p>
-                    <p>2022</p>
+                    <p>Universidad Tecnológica Nacional Buenos Aires</p>
+                    <p class="year">2022</p>
                 </div>
             </div>
     
-            <div id="skills" class="skills">
-                <h1>SKILLS</h1>
+            <div id="Tech-stack" class="skills">
+                <h1>TECH STACK</h1>
 
                 <div class="skills-container">
-                    <h3>Backend</h3>
-                    <p>Java</p>
-                    <p>Spring boot</p>
-                    <p>Hibernate</p>
-                    <p>MySQL</p>
-                    <hr>
-                    <h3>Frontend</h3>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <P>JavaScript</P>
-                    <hr>
-                    <h3>Soft skills</h3>
-                    <p>Teamwork</p>
-                    <p>Adaptability</p>
+                    <div class="hard">
+                        <h3>Backend</h3>
+                        <p>Java</p>
+                        <p>Spring boot</p>
+                        <p>Hibernate</p>
+                        <p>MySQL</p>
+                        <p>GitHub</p>
+                        <p>REST APIs</p>
+                        <hr>
+                        <h3>Frontend</h3>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <P>JavaScript</P>
+                    </div>
+                    <div class="soft">
+                        <h3>Soft skills</h3>
+                        <p>Teamwork</p>
+                        <p>Open-Mindedness</p>
+                        <p>Adaptability</p>
+                        <p>Communication</p>
+                        <p>Time Management</p>
+                        <p>Emotional Intelligence</p>
+                        <p>Critical Thinking</p>
+                        <p>Empathy</p>
+                        <p>Organization</p>
+                        <p>Work ethic and motivation</p>
+                        <p>Creativity</p>
+                        <p>Attention to detail</p>
+                        <p>Problem solving</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,7 +169,7 @@
             <p class="footer-left">Copyright ©2024-Santiago Borgna</p>
             <div class="footer-right">
                 <a href="https://github.com/SantiagoBorgna" class="btn"><button><img src="Images/github.png"></button></a>
-                <a href="https://www.linkedin.com/in/santiago-borgna/" class="btn"><button><img src="Images/linkedin negro.png"></button></a>
+                <a href="https://www.linkedin.com/in/santiago-borgna/" class="btn"><button><img src="Images/linkedin.png"></button></a>
             </div>
         </div>
 
