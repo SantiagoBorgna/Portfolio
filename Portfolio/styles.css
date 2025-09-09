@@ -396,61 +396,6 @@ p{
     justify-content: space-evenly;
 }
 
-.contact-container .contact-form{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 20px;
-}
-
-.contact-container .contact-form h2{
-    font-size: 30px;
-    margin-bottom: 5px;
-}
-
-.contact-container .contact-form hr{
-    border: none;
-    width: 130px;
-    height: 5px;
-    background-color: #F8F6E3;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.contact-container .contact-form .contact-input{
-    width: 400px;
-    height: 50px;
-    border: none;
-    outline: none;
-    padding-left: 25px;
-    color: black;
-    border-radius: 15px;
-}
-
-.contact-container .contact-form .contact-input:focus{
-    background-color: #F8F6E3;
-}
-
-.contact-container .contact-form textarea{
-    width: 400px;
-    min-height: 140px;
-    height: auto;
-    border: none;
-    outline: none;
-    padding-top: 15px;
-    color: gray;
-    border-radius: 15px;
-}
-
-.contact-container .contact-form button{
-    color: #003C43;
-    padding: 9px 20px;
-    background-color: #F8F6E3;
-    border: none;
-    border-radius: 9px;
-    cursor: pointer;
-}
-
 @media screen and (max-width: 1200px){
     .contact-container{
         width: 80vw;
