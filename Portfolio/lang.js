@@ -36,6 +36,9 @@ const translations = {
     project3Title: "Natura - Order manager",
     project3Desc: "A desktop application developed to manage Natura sales cycles and their associated orders. The system allows users to create and edit cycles, register client orders, and keep track of all orders within each cycle using a MySQL database. It provides a simple and organized interface to streamline order management.",
 
+    project4Title: "Dr. Natalia Molina - Professional Website",
+    project4Desc: "Modern and fully responsive landing page developed for a plastic surgery specialist. Built using HTML5, CSS3, and Vanilla JavaScript to ensure maximum performance and SEO. It implements smooth navigation, an interactive modal system with dynamic data injection for the treatment catalog, and direct integration with the WhatsApp API for appointment management.",
+
     // Education
     edu1Title: "Software Engineering",
     edu1School: "Siglo 21 University",
@@ -105,6 +108,9 @@ const translations = {
 
     project3Title: "Natura - Gestor de pedidos",
     project3Desc: "Aplicación de escritorio para gestionar ciclos de ventas de Natura y sus pedidos asociados. Permite crear y editar ciclos, registrar pedidos de clientes y llevar el control de todos los pedidos dentro de cada ciclo, utilizando una base de datos MySQL. La interfaz es sencilla y organizada para optimizar la gestión de pedidos.",
+
+    project4Title: "Dra. Natalia Molina - Sitio Web Profesional",
+    project4Desc: "Landing page moderna y totalmente responsiva desarrollada para una especialista en cirugía plástica. Construida con HTML5, CSS3 y JavaScript puro para asegurar máximo rendimiento y SEO. Implementa una navegación fluida (SPA), un sistema de modales interactivos, e integración directa con la API de WhatsApp para la gestión de citas.",
 
     // Education
     edu1Title: "Ingeniería en Software",
@@ -187,6 +193,8 @@ function setLanguage(lang) {
     safeSet("project2-desc", translations[lang].project2Desc);
     safeSet("project3-title", translations[lang].project3Title);
     safeSet("project3-desc", translations[lang].project3Desc);
+    safeSet("project4-title", translations[lang].project4Title);
+    safeSet("project4-desc", translations[lang].project4Desc);
 
     // Read more buttons
     const readmoreText = translations[lang].projects_readmore;

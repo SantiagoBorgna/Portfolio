@@ -311,6 +311,11 @@ p{
     font-size: 0.8rem;
 }
 
+#project4-title{
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
 /* Data */
 .data{
     background-color: #F8F6E3;
