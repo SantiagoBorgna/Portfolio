@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Santiago Borgna</title>
+        <link rel="icon" type="image/png" href="Images/favicon.png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">  
+    </head>
+    <body id="top">
+        <header class="header">
+            <div class="logo">
+                <a href="#top"><img id="logo-desktop" src="Images/logo-en.jpg"></a>
+                <a href="#top"><img id="logo-mobile" src="Images/logo-mobile.jpg"></a>
+            </div>
+            <nav class="nav">
+                <ul class = "nav-links">
+                    <li><a id="nav_about" href="#about-me">About me</a></li>
+                    <li><a id="nav_projects" href="#projects">Projects</a></li>
+                    <li><a id="nav_education" href="#education">Education</a></li>
+                    <li><a id="nav_stack" href="#Tech-stack">Tech stack</a></li>
+                    <li><a id="nav_contact" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a onclick="openNav()" href="#" class="menu"><button>≡</button></a>
+
+            <div class="overlay" id="mobile-menu">
+                <a onclick="closeNav()" href="#" class="close" id="close-btn"><button>X</button></a>
+                <div class="overlay-content">
+                    <a id="mnav_about" onclick="closeNav()" href="#about-me">About me</a>
+                    <a id="mnav_projects" onclick="closeNav()" href="#projects">Projects</a>
+                    <a id="mnav_education" onclick="closeNav()" href="#education">Education</a>
+                    <a id="mnav_stack" onclick="closeNav()" href="#Tech-stack">Tech stack</a>
+                    <a id="mnav_contact" onclick="closeNav()" href="#contact">Contact</a>
+                </div>
+            </div>
+
+            <div class="language-selector">
+                <button onclick="setLanguage('en')">EN</button>
+                <button onclick="setLanguage('es')">ES</button>
+            </div>
+
+        </header>
+
+        <div id="about-me" class="info">
+            <h1 id="about-title">ABOUT ME</h1>
+
+            <div class="container">
+                <div id="info-text">
+                    <p id="about-1">Welcome to my portfolio! I'm Santiago Borgna, a dedicated Junior Software Developer based in Córdoba, Argentina. My journey in the world of software development has been driven by a relentless pursuit of innovation and a deep-seated passion for crafting solutions that make a difference.</p>
+                    <p id="about-2">What sets me apart is my collaborative spirit and adaptability. Thriving in team environments, I leverage my leadership qualities to deliver high-quality solutions within deadlines. Proficient in Java, SQL, Spring Boot, and various web technologies, I prioritize continuous learning and professional growth to stay ahead in the ever-evolving tech landscape.</p>    
+                    <p id="about-3">Armed with a Diploma in Java Programming and pursuing a Bachelor's degree in Software Engineering, my technical expertise is complemented by a commitment to excellence. Fluent in Spanish and with intermediate proficiency in English, I'm poised to contribute effectively to dynamic projects in the Java development sphere.</p>
+                    <p id="about-4">Thank you for joining me on this exciting path of discovery and innovation. Let's collaborate and bring innovative ideas to life!</p>
+                </div>
+                <img id="image" src="Images/I3.png">
+            </div>
+
+        </div>
+
+        <div id="projects" class="projects">
+            <h1 id="projects-title">PROJECTS</h1>
+            
+            <div class="cards-container">
+
+                <div class="card">
+                    
+                    <h4 id="project1-title">El Arca Home - Inventory system</h4>
+                    <img src="Images/arca-inventory.png">
+                    <p class="description" id="project1-desc">
+                        A desktop application tailored for small businesses to efficiently manage inventory and daily sales across multiple branches. 
+                        It includes real-time stock synchronization, sales registration with multiple payment methods, detailed reporting, and account tracking for customers. 
+                        The interface is designed to be user-friendly and optimized for high-volume daily operations.</p>
+
+                    <div class="project-stack">
+                        <span class="chip">Java</span>
+                        <span class="chip">Swing</span>
+                        <span class="chip">MySQL</span>
+                        <span class="chip">JDBC</span>
+                    </div>
+                    <p>2024 - 2025</p>
+
+                    <a href="https://github.com/SantiagoBorgna/Manejo-de-inventario" target="_blank" rel="noopener noreferrer"><button class="projects-readmore">Read more</button></a>
+                </div>
+
+                <div class="card">
+                    
+                    <h4 id="project2-title">El Arca Home - Ecommerce</h4>
+                    <img src="Images/arca-store.png">
+                    <p class="description" id="project2-desc">A fully responsive and dynamic e-commerce website developed for El Arca Home, a home goods store. 
+                        This platform allows users to browse a catalog of products, add items to a cart, 
+                        and complete purchases. It features a clean user interface, stock control, 
+                        and an admin-friendly backend connected to a live MySQL database.</p>
+
+                    <div class="project-stack">
+                        <span class="chip">Java</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                        <span class="chip">MySQL</span>
+                        <span class="chip">JDBC</span>
+                    </div>
+                    <p>2025</p>
+
+                    <a href="https://github.com/SantiagoBorgna/TiendaWebArca" target="_blank" rel="noopener noreferrer"><button class="projects-readmore">Read more</button></a>
+                </div>
+
+                <div class="card">
+                    
+                    <h4 id="project3-title">Natura - Order manager</h4>
+                    <img src="Images/natura.png">
+                    <p class="description" id="project3-desc">
+                        A desktop application developed to manage Natura sales cycles and their associated orders. 
+                        The system allows users to create and edit cycles, register client orders, and keep track of all orders within each cycle 
+                        using a MySQL database. It provides a simple and organized interface to streamline order management.  
+                    </p>
+
+                    <div class="project-stack">
+                        <span class="chip">Java</span>
+                        <span class="chip">Swing</span>
+                        <span class="chip">MySQL</span>
+                        <span class="chip">JDBC</span>
+                    </div>
+                    <p>2025</p>
+
+                    <a href="https://github.com/SantiagoBorgna/natura-pedidos" target="_blank" rel="noopener noreferrer"><button class="projects-readmore">Read more</button></a>
+                </div>
+
+                <div class="card">
+                    
+                    <h4 id="project4-title">Dr. Natalia Molina - Professional Website</h4>
+                    <img src="Images/dra-molina.png">
+                    <p class="description" id="project4-desc">
+                        Modern and fully responsive landing page developed for a plastic surgery specialist. 
+                        Built using HTML5, CSS3, and Vanilla JavaScript to ensure maximum performance and SEO. 
+                        It implements smooth navigation, an interactive modal system with dynamic data injection 
+                        for the treatment catalog, and direct integration with the WhatsApp API for appointment management.  
+                    </p>
+
+                    <div class="project-stack">
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                    </div>
+                    <p>2025</p>
+
+                    <a href="https://github.com/SantiagoBorgna/web-dra-molina" target="_blank" rel="noopener noreferrer"><button class="projects-readmore">Read more</button></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="data">
+            <div id="education" class="education">
+                <h1 id="education-title">EDUCATION</h1>
+
+                <div class="education-container">
+                    <h3 id="edu1-title">Software Engineering</h3>
+                    <p id="edu1-school">Universidad Siglo 21</p>
+                    <p class="year" id="edu1-year">2023 - Present day</p>
+                    <hr>
+                    <h3 id="edu2-title">Diploma in Java Programming</h3>
+                    <p id="edu2-school">Universidad Tecnológica Nacional Buenos Aires</p>
+                    <p class="year">2022</p>
+                </div>
+            </div>
+    
+            <div id="Tech-stack" class="skills">
+                <h1 id="tech-title">TECH STACK</h1>
+
+                <div class="skills-container">
+                    <div class="hard">
+                        <h3>Backend</h3>
+                        <p>Java</p>
+                        <p>Spring boot</p>
+                        <!-- <p>Hibernate</p> -->
+                        <p>MySQL</p>
+                        <p>Python</p>
+                        <!-- <p>Django</p> -->
+                        <p>GitHub</p>
+                        <p>REST APIs</p>
+                        <hr>
+                        <h3>Frontend</h3>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <P>JavaScript</P>
+                    </div>
+
+                    <hr id="education-line">
+
+                    <div class="soft">
+                        <h3 id="softskills-title">Soft skills</h3>
+                        <p class="soft-skill">Teamwork</p>
+                        <p class="soft-skill">Scrum</p>
+                        <p class="soft-skill">Open-Mindedness</p>
+                        <p class="soft-skill">Adaptability</p>
+                        <p class="soft-skill">Communication</p>
+                        <p class="soft-skill">Time Management</p>
+                        <!-- <p class="soft-skill">Emotional Intelligence</p> -->
+                        <p class="soft-skill">Critical Thinking</p>
+                        <!-- <p class="soft-skill">Empathy</p> -->
+                        <p class="soft-skill">Organization</p>
+                        <p class="soft-skill">Work ethic and motivation</p>
+                        <p class="soft-skill">Creativity</p>
+                        <p class="soft-skill">Attention to detail</p>
+                        <p class="soft-skill">Problem solving</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="contact">
+            <h1 id="contact-title">CONTACT</h1>
+
+            <div class="contact-container">
+                <div class="contact-form-title">
+                    <h2 id="contact-subtitle">Get in touch</h2>
+                    <hr>
+                    <div class="contact-data">
+                        <p><span id="contact-phone-label">Phone:</span> +54 9 3532403017</p>
+                        <p><span id="contact-email-label">Email:</span> santiborgna5@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p class="footer-left">Copyright ©2024-Santiago Borgna</p>
+            <div class="footer-right">
+                <a href="https://github.com/SantiagoBorgna" class="btn" target="_blank" rel="noopener noreferrer"><button><img src="Images/github.png"></button></a>
+                <a href="https://www.linkedin.com/in/santiago-borgna/" class="btn" target="_blank" rel="noopener noreferrer"><button><img src="Images/linkedin.png"></button></a>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="nav.js"></script>
+        <script type="text/javascript" src="lang.js"></script>
+
+    </body>
+</html>
