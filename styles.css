@@ -139,7 +139,7 @@ p{
     color: #F8F6E3;
 }
 
-.header .menu button{
+.header .menu{
     margin-left: 20px;
     color: #003C43;
     padding: 9px 25px;
@@ -182,7 +182,7 @@ p{
     color: #F8F6E3;
 }
 
-.header .overlay .close button{
+.header .overlay .close{
     margin-left: 30px;
     color: #003C43;
     padding: 9px 14px;

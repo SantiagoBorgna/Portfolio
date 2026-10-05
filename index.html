@@ -15,7 +15,6 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display+SC:wght@400;700&display=swap" rel="stylesheet">  
     </head>
     <body id="top">
@@ -25,7 +24,7 @@
                 <a href="#top"><img id="logo-mobile" src="Images/logo-mobile.jpg"></a>
             </div>
             <nav class="nav">
-                <ul class = "nav-links">
+                <ul class="nav-links">
                     <li><a id="nav_about" href="#about-me">About me</a></li>
                     <li><a id="nav_experience" href="#experience">Experience</a></li>
                     <li><a id="nav_projects" href="#projects">Projects</a></li>
@@ -35,10 +34,10 @@
                 </ul>
             </nav>
 
-            <a onclick="openNav()" href="#" class="menu"><button>≡</button></a>
+            <button type="button" onclick="openNav()" class="menu" aria-label="Open menu">≡</button>
 
             <div class="overlay" id="mobile-menu">
-                <a onclick="closeNav()" href="#" class="close" id="close-btn"><button>X</button></a>
+                <button type="button" onclick="closeNav()" class="close" id="close-btn" aria-label="Close menu">X</button>
                 <div class="overlay-content">
                     <a id="mnav_about" onclick="closeNav()" href="#about-me">About me</a>
                     <a id="mnav_experience" onclick="closeNav()" href="#experience">Experience</a>
