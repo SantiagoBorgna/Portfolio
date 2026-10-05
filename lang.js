@@ -19,12 +19,9 @@ const translations = {
     contactTitle: "CONTACT",
 
     // About me
-    about: [
-      "Welcome to my portfolio! I'm Santiago Borgna, a dedicated Junior Software Developer based in Córdoba, Argentina. My journey in the world of software development has been driven by a relentless pursuit of innovation and a deep-seated passion for crafting solutions that make a difference.",
-      "What sets me apart is my collaborative spirit and adaptability. Thriving in team environments, I leverage my leadership qualities to deliver high-quality solutions within deadlines. Proficient in Java, SQL, Spring Boot, and various web technologies, I prioritize continuous learning and professional growth to stay ahead in the ever-evolving tech landscape.",
-      "Armed with a Diploma in Java Programming and pursuing a Bachelor's degree in Software Engineering, my technical expertise is complemented by a commitment to excellence. Fluent in Spanish and with advanced proficiency in English, I'm poised to contribute effectively to dynamic projects in the Java development sphere.",
-      "Thank you for joining me on this exciting path of discovery and innovation. Let's collaborate and bring innovative ideas to life!"
-    ],
+    "about-1": "I'm Santiago Borgna, a backend software engineer based in Córdoba, Argentina. I build business systems in Java and Spring Boot and take them from client requirements to production, including an inventory and sales system and an e-commerce store used in production by a retail client.",
+    "about-2": "I currently work as a technical and functional consultant at GiGa Global, customizing Odoo ERP with Python. Earlier this year I designed and built a multi-tenant compliance platform for an environmental consultancy, with JWT authentication and role-based access. I'm now focusing on application security.",
+    "about-3": "I'm completing a B.Sc. in Software Engineering at Universidad Siglo 21 (GPA 9.33/10) and I'm open to remote opportunities.",
 
     // Projects
     project1Title: "El Arca Home - Inventory system",
@@ -92,12 +89,9 @@ const translations = {
     contactTitle: "CONTACTO",
 
     // About me
-    about: [
-      "¡Bienvenido a mi portafolio! Soy Santiago Borgna, un Desarrollador de Software Junior de Córdoba, Argentina. Mi camino en el mundo del desarrollo de software está guiado por la innovación y la pasión por crear soluciones que generen impacto.",
-      "Lo que me diferencia es mi espíritu colaborativo y mi adaptabilidad. Disfruto trabajar en equipo, aprovechando mis cualidades de liderazgo para entregar soluciones de calidad en tiempo y forma. Manejo Java, SQL, Spring Boot y diversas tecnologías web, siempre priorizando el aprendizaje continuo y el crecimiento profesional.",
-      "Con un Diplomado en Programación Java y cursando la Licenciatura en Ingeniería de Software, complemento mi experiencia técnica con un fuerte compromiso hacia la excelencia. Soy nativo en español y tengo un nivel avanzado de inglés, lo que me permite contribuir en proyectos dinámicos dentro del ámbito del desarrollo Java.",
-      "Gracias por visitar mi portafolio. ¡Colaboremos y llevemos ideas innovadoras a la realidad!"
-    ],
+    "about-1": "Soy Santiago Borgna, desarrollador backend de Córdoba, Argentina. Construyo sistemas de gestión en Java y Spring Boot y los llevo desde el relevamiento con el cliente hasta producción, incluyendo un sistema de inventario y ventas y una tienda online que un cliente del rubro retail usa en producción.",
+    "about-2": "Actualmente trabajo como consultor técnico y funcional en GiGa Global, personalizando el ERP Odoo con Python. A comienzos de este año diseñé y desarrollé una plataforma multi-tenant de cumplimiento normativo para una consultora ambiental, con autenticación JWT y control de acceso por roles. Hoy me estoy enfocando en la seguridad de aplicaciones.",
+    "about-3": "Curso la Ingeniería en Software en la Universidad Siglo 21 (promedio 9,33/10) y estoy abierto a oportunidades remotas.",
 
     // Projects
     project1Title: "El Arca Home - Sistema de inventario",
@@ -178,13 +172,6 @@ function setLanguage(lang) {
     safeSet("education-title", translations[lang].educationTitle);
     safeSet("tech-title", translations[lang].techTitle);
     safeSet("contact-title", translations[lang].contactTitle);
-
-    // About me (párrafos)
-    if (Array.isArray(translations[lang].about)) {
-      translations[lang].about.forEach((text, i) => {
-        safeSet(`about-${i + 1}`, text);
-      });
-    }
 
     // Projects
     safeSet("project1-title", translations[lang].project1Title);
