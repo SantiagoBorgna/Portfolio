@@ -74,23 +74,11 @@ const translations = {
     edu2School: "National Technological University Buenos Aires",
 
     // Tech stack
-    softSkills: "Soft skills",
-    softSkillsList: [
-      "Teamwork",
-      "Scrum",
-      "Open-Mindedness",
-      "Adaptability",
-      "Communication",
-      "Time Management",
-      //"Emotional Intelligence",
-      "Critical Thinking",
-      //"Empathy",
-      "Organization",
-      "Work ethic and motivation",
-      "Creativity",
-      "Attention to detail",
-      "Problem solving"
-    ],
+    "stack-languages": "Languages",
+    "stack-backend": "Backend",
+    "stack-frontend": "Frontend",
+    "stack-databases": "Databases",
+    "stack-tools": "Tools & practices",
 
     // Contact
     "contact-subtitle": "Get in touch",
@@ -173,23 +161,11 @@ const translations = {
     edu2School: "Universidad Tecnológica Nacional Buenos Aires",
 
     // Tech stack
-    softSkills: "Habilidades blandas",
-    softSkillsList: [
-        "Trabajo en equipo",
-        "Scrum",
-        "Mentalidad abierta",
-        "Adaptabilidad",
-        "Comunicación",
-        "Gestión del tiempo",
-        //"Inteligencia emocional",
-        "Pensamiento crítico",
-        //"Empatía",
-        "Organización",
-        "Ética de trabajo y motivación",
-        "Creatividad",
-        "Atención al detalle",
-        "Resolución de problemas"
-    ],
+    "stack-languages": "Lenguajes",
+    "stack-backend": "Backend",
+    "stack-frontend": "Frontend",
+    "stack-databases": "Bases de datos",
+    "stack-tools": "Herramientas y prácticas",
 
     // Contact
     "contact-subtitle": "Ponte en contacto",
@@ -238,14 +214,6 @@ function setLanguage(lang) {
     safeSet("edu2-title", translations[lang].edu2Title);
     safeSet("edu2-school", translations[lang].edu2School);
     safeSet("edu2-year", translations[lang].edu2Year);
-
-    // Tech stack - soft skills list
-    safeSet("softskills-title", translations[lang].softSkills);
-    const softSkillEls = document.querySelectorAll(".soft-skill");
-    const list = translations[lang].softSkillsList || [];
-    list.forEach((text, i) => {
-      if (softSkillEls[i]) softSkillEls[i].textContent = text;
-    });
 
     // Contacto
     safeSet("contact-subtitle", translations[lang]["contact-subtitle"]);

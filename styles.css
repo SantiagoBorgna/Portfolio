@@ -394,8 +394,9 @@ p{
 .data{
     background-color: #F8F6E3;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
 .data h3{
@@ -449,14 +450,11 @@ p{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px 60px;
 }
 
-.skills .skills-container .hard{
-    margin: 0 30px;
-}
-
-.skills .skills-container .soft{
-    margin: 0 30px;
+.skills .skills-container .skill-group{
+    min-width: 150px;
 }
 
 /* Contact */
@@ -595,8 +593,6 @@ p{
 
     /* Data */
     .data {
-        flex-direction: column;
-        align-items: center; 
         text-align: center;
     }
 
@@ -607,7 +603,7 @@ p{
     }
 
     .data .skills hr{
-        width: 240px;
+        width: 100px;
         height: 2px;
         margin: 7px auto;
     }
@@ -636,25 +632,21 @@ p{
         text-align: center;           /* opcional: centrado para mobile */
     }
 
-    #education-line{
-        margin: 0 auto;
-    }
-
     .skills .skills-container {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
         display: flex;
-        flex-direction: column; 
-        gap: 20px;  
+        flex-direction: column;
+        gap: 20px;
     }
 
-    .soft {
+    .skill-group {
         text-align: center;
     }
 
-    .soft p {
-        margin: 4px 0;  
+    .skill-group p {
+        margin: 4px 0;
     }
 
     /* Contact */
