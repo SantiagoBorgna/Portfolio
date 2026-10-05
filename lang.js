@@ -66,12 +66,16 @@ const translations = {
     "project3-code": "View code",
 
     // Education
-    edu1Title: "Software Engineering",
-    edu1School: "Siglo 21 University",
-    edu1Year: "2023 - Present day",
+    "edu1-title": "B.Sc. in Software Engineering",
+    "edu1-school": "Universidad Siglo 21",
+    "edu1-year": "2023 – Present",
+    "edu1-detail": "4th year · Intermediate degree earned: Analista en Software",
 
-    edu2Title: "Diploma in Java Programming",
-    edu2School: "National Technological University Buenos Aires",
+    "edu2-title": "Diploma in Java Programming",
+    "edu2-school": "Universidad Tecnológica Nacional (UTN)",
+
+    "edu3-title": "Languages",
+    "edu3-line": "English Upper-Intermediate / Advanced · Spanish Native",
 
     // Tech stack
     "stack-languages": "Languages",
@@ -153,12 +157,16 @@ const translations = {
     "project3-code": "Ver código",
 
     // Education
-    edu1Title: "Ingeniería en Software",
-    edu1School: "Universidad Siglo 21",
-    edu1Year: "2023 - Actualidad",
+    "edu1-title": "Ingeniería en Software",
+    "edu1-school": "Universidad Siglo 21",
+    "edu1-year": "2023 – Actualidad",
+    "edu1-detail": "4.º año · Título intermedio obtenido: Analista en Software",
 
-    edu2Title: "Diplomado en Programación Java",
-    edu2School: "Universidad Tecnológica Nacional Buenos Aires",
+    "edu2-title": "Diplomado en Programación Java",
+    "edu2-school": "Universidad Tecnológica Nacional (UTN)",
+
+    "edu3-title": "Idiomas",
+    "edu3-line": "Inglés Intermedio alto / Avanzado · Español nativo",
 
     // Tech stack
     "stack-languages": "Lenguajes",
@@ -206,14 +214,6 @@ function setLanguage(lang) {
     safeSet("education-title", translations[lang].educationTitle);
     safeSet("tech-title", translations[lang].techTitle);
     safeSet("contact-title", translations[lang].contactTitle);
-
-    // Education
-    safeSet("edu1-title", translations[lang].edu1Title);
-    safeSet("edu1-school", translations[lang].edu1School);
-    safeSet("edu1-year", translations[lang].edu1Year);
-    safeSet("edu2-title", translations[lang].edu2Title);
-    safeSet("edu2-school", translations[lang].edu2School);
-    safeSet("edu2-year", translations[lang].edu2Year);
 
     // Contacto
     safeSet("contact-subtitle", translations[lang]["contact-subtitle"]);
