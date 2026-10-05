@@ -9,11 +9,11 @@ const translations = {
     nav_contact: "Contact",
 
     // Títulos principales
-    aboutTitle: "ABOUT ME",
-    projectsTitle: "PROJECTS",
-    educationTitle: "EDUCATION",
-    techTitle: "TECH STACK",
-    contactTitle: "CONTACT",
+    "about-title": "ABOUT ME",
+    "projects-title": "PROJECTS",
+    "education-title": "EDUCATION",
+    "tech-title": "TECH STACK",
+    "contact-title": "CONTACT",
 
     // About me
     "about-1": "I'm Santiago Borgna, a backend software engineer based in Córdoba, Argentina. I build business systems in Java and Spring Boot and take them from client requirements to production, including an inventory and sales system and an e-commerce store used in production by a retail client.",
@@ -98,11 +98,11 @@ const translations = {
     nav_contact: "Contacto",
 
     // Títulos principales
-    aboutTitle: "SOBRE MÍ",
-    projectsTitle: "PROYECTOS",
-    educationTitle: "EDUCACIÓN",
-    techTitle: "TECNOLOGÍAS",
-    contactTitle: "CONTACTO",
+    "about-title": "SOBRE MÍ",
+    "projects-title": "PROYECTOS",
+    "education-title": "EDUCACIÓN",
+    "tech-title": "TECNOLOGÍAS",
+    "contact-title": "CONTACTO",
 
     // About me
     "about-1": "Soy Santiago Borgna, desarrollador backend de Córdoba, Argentina. Construyo sistemas de gestión en Java y Spring Boot y los llevo desde el relevamiento con el cliente hasta producción, incluyendo un sistema de inventario y ventas y una tienda online que un cliente del rubro retail usa en producción.",
@@ -179,6 +179,8 @@ const translations = {
 };
 
 function setLanguage(lang) {
+  if (!translations[lang]) lang = "en";
+
   try {
     // Helper seguro
     function safeSet(id, value) {
@@ -196,7 +198,8 @@ function setLanguage(lang) {
         logoImg.src = "Images/logo-es.jpg";
     }
 
-    // Navbar + textos simples
+    // Cada texto del diccionario se aplica al elemento cuyo id coincide con la clave
+    // (y a su copia del menú mobile, con id prefijado con "m")
     for (const key in translations[lang]) {
       const val = translations[lang][key];
       if (typeof val === "string") {
@@ -204,15 +207,12 @@ function setLanguage(lang) {
       }
     }
 
-    // Títulos principales
-    safeSet("about-title", translations[lang].aboutTitle);
-    safeSet("projects-title", translations[lang].projectsTitle);
-    safeSet("education-title", translations[lang].educationTitle);
-    safeSet("tech-title", translations[lang].techTitle);
-    safeSet("contact-title", translations[lang].contactTitle);
+    document.documentElement.lang = lang;
 
-    // Guardar elección en localStorage
-    localStorage.setItem("lang", lang);
+    // Guardar elección en localStorage (puede fallar en modo privado)
+    try {
+      localStorage.setItem("lang", lang);
+    } catch (e) {}
 
   } catch (err) {
     console.error("Error cambiando idioma:", err);
@@ -221,7 +221,10 @@ function setLanguage(lang) {
 
 // Inicializar con el idioma guardado
 document.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem("lang") || "en";
+  let savedLang = "en";
+  try {
+    savedLang = localStorage.getItem("lang") || "en";
+  } catch (e) {}
   setLanguage(savedLang);
 });
 

@@ -127,6 +127,11 @@ p{
     color: #003C43;
 }
 
+/* The mobile menu has its own copy of the selector, only shown on mobile */
+.overlay-content .language-selector {
+    display: none;
+}
+
 /*Mobile nav*/
 .header a{
     font-family: "Open Sans", sans-serif;
@@ -599,6 +604,10 @@ p{
         display: flex;
         justify-content: center;
         margin-top: 15px;
+    }
+
+    .overlay-content .language-selector button {
+        padding: 8px 18px;
     }
 
     .info{
