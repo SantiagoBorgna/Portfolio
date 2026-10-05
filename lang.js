@@ -7,9 +7,6 @@ const translations = {
     nav_education: "Education",
     nav_stack: "Tech stack",
     nav_contact: "Contact",
-    contact_title: "Contact",
-    contact_subtitle: "Get in touch",
-    contact_phone: "Phone",
 
     // Títulos principales
     aboutTitle: "ABOUT ME",
@@ -86,8 +83,9 @@ const translations = {
 
     // Contact
     "contact-subtitle": "Get in touch",
-    "contact-phone-label": "Phone",
-    "contact-email-label": "Email",
+    "contact-email-label": "Email:",
+    "cv-en": "Download CV (EN)",
+    "cv-es": "Download CV (ES)",
   },
 
   es: {
@@ -98,9 +96,6 @@ const translations = {
     nav_education: "Educación",
     nav_stack: "Tecnologías",
     nav_contact: "Contacto",
-    contact_title: "Contacto",
-    contact_subtitle: "Hablemos",
-    contact_phone: "Teléfono",
 
     // Títulos principales
     aboutTitle: "SOBRE MÍ",
@@ -177,8 +172,9 @@ const translations = {
 
     // Contact
     "contact-subtitle": "Ponte en contacto",
-    "contact-phone-label": "Teléfono",
-    "contact-email-label": "Correo",
+    "contact-email-label": "Correo:",
+    "cv-en": "Descargar CV (EN)",
+    "cv-es": "Descargar CV (ES)",
   }
 };
 
@@ -214,11 +210,6 @@ function setLanguage(lang) {
     safeSet("education-title", translations[lang].educationTitle);
     safeSet("tech-title", translations[lang].techTitle);
     safeSet("contact-title", translations[lang].contactTitle);
-
-    // Contacto
-    safeSet("contact-subtitle", translations[lang]["contact-subtitle"]);
-    safeSet("contact-phone-label", translations[lang]["contact-phone-label"] + ":");
-    safeSet("contact-email-label", translations[lang]["contact-email-label"] + ":");
 
     // Guardar elección en localStorage
     localStorage.setItem("lang", lang);
