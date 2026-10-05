@@ -74,12 +74,13 @@ p{
 .header .nav-links{
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 12px;
 }
 
 .header .nav-links li{
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 12px;
+    white-space: nowrap;
 }
 
 .header .nav-links a{
@@ -88,7 +89,7 @@ p{
 }
 
 .header .nav-links li:nth-child(1){
-    padding: 0 20px 0 0;
+    padding: 0 12px 0 0;
 }
 
 .header .nav-links li:hover,
@@ -217,6 +218,54 @@ p{
     margin-right: 5px;
     width: 600px;
     height: 700px;
+}
+
+/* Experience */
+.experience{
+    background-color: #F8F6E3;
+    padding: 0 150px 20px 150px;
+}
+
+.experience h1{
+    text-align: left;
+}
+
+.experience-list{
+    max-width: 950px;
+}
+
+.job{
+    border-left: 3px solid #003C43;
+    padding-left: 24px;
+    margin-bottom: 40px;
+}
+
+.job h3{
+    font-size: 24px;
+}
+
+.job-meta{
+    font-size: 18px;
+    margin: 2px 0 10px 0;
+}
+
+.job-meta strong,
+.job-meta span{
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.job ul{
+    margin: 12px 0 0 0;
+    padding-left: 20px;
+}
+
+.job li{
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 6px;
+    overflow: visible;
 }
 
 /* Projects */
@@ -440,6 +489,18 @@ p{
     background: none;
 }
 
+/* With six nav links the desktop header no longer fits below ~1200px, so the hamburger menu starts earlier than the rest of the mobile layout */
+@media screen and (max-width: 1200px){
+    .nav{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        overflow-y: hidden;
+    }
+}
+
 @media screen and (max-width: 768px){
     *{
         overflow-x: hidden;
@@ -480,15 +541,6 @@ p{
         display: none;
     }
 
-    .nav{
-        display: none;
-    }
-
-    .menu{
-        display: block;
-        overflow-y: hidden;
-    }
-
     .overlay-content .language-selector {
         display: flex;
         justify-content: center;
@@ -506,6 +558,14 @@ p{
 
     .info #image{
         display: none;
+    }
+
+    .experience{
+        padding: 0 40px 10px 40px;
+    }
+
+    .job{
+        padding-left: 16px;
     }
 
     /* Data */

@@ -20,6 +20,7 @@
             <nav class="nav">
                 <ul class = "nav-links">
                     <li><a id="nav_about" href="#about-me">About me</a></li>
+                    <li><a id="nav_experience" href="#experience">Experience</a></li>
                     <li><a id="nav_projects" href="#projects">Projects</a></li>
                     <li><a id="nav_education" href="#education">Education</a></li>
                     <li><a id="nav_stack" href="#Tech-stack">Tech stack</a></li>
@@ -33,6 +34,7 @@
                 <a onclick="closeNav()" href="#" class="close" id="close-btn"><button>X</button></a>
                 <div class="overlay-content">
                     <a id="mnav_about" onclick="closeNav()" href="#about-me">About me</a>
+                    <a id="mnav_experience" onclick="closeNav()" href="#experience">Experience</a>
                     <a id="mnav_projects" onclick="closeNav()" href="#projects">Projects</a>
                     <a id="mnav_education" onclick="closeNav()" href="#education">Education</a>
                     <a id="mnav_stack" onclick="closeNav()" href="#Tech-stack">Tech stack</a>
@@ -59,6 +61,70 @@
                 <img id="image" src="Images/I3.png">
             </div>
 
+        </div>
+
+        <div id="experience" class="experience">
+            <h1 id="experience-title">EXPERIENCE</h1>
+
+            <div class="experience-list">
+
+                <div class="job">
+                    <h3 id="exp1-role">Technical and Functional Consultant</h3>
+                    <p class="job-meta"><strong>GiGa Global</strong> · <span id="exp1-date">May 2026 – Present</span> · <span id="exp1-place">Córdoba, Argentina</span></p>
+                    <div class="job-stack">
+                        <span class="chip">Python</span>
+                        <span class="chip">Odoo</span>
+                        <span class="chip">PostgreSQL</span>
+                        <span class="chip">QWeb</span>
+                        <span class="chip">XML</span>
+                    </div>
+                    <ul>
+                        <li id="exp1-b1">Translate client business processes into technical requirements for Odoo ERP implementations.</li>
+                        <li id="exp1-b2">Build and extend custom Odoo functionality for client operational, sales and accounting workflows.</li>
+                        <li id="exp1-b3">Diagnose and fix defects and configuration issues to keep client systems stable.</li>
+                        <li id="exp1-b4">Coordinate updates, data migrations and releases from staging to production.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h3 id="exp2-role">Software Developer (Professional Internship)</h3>
+                    <p class="job-meta"><strong>BIO HUB</strong> · <span id="exp2-date">Mar 2026 – Jun 2026</span> · <span id="exp2-place">Environmental consultancy, Córdoba</span></p>
+                    <div class="job-stack">
+                        <span class="chip">Java 17</span>
+                        <span class="chip">Spring Boot</span>
+                        <span class="chip">Spring Security</span>
+                        <span class="chip">React</span>
+                        <span class="chip">MySQL</span>
+                        <span class="chip">Docker</span>
+                    </div>
+                    <ul>
+                        <li id="exp2-b1">Designed and built a multi-tenant compliance tracking platform that replaces an Excel-based process: each client and the admin see their compliance status and the next tasks required by provincial regulations.</li>
+                        <li id="exp2-b2">Implemented a REST API in Spring Boot with JWT authentication and role-based access, keeping each client's data isolated.</li>
+                        <li id="exp2-b3">Managed the database with versioned Flyway migrations and containerized the application with Docker.</li>
+                        <li id="exp2-b4">Delivered a working demo with a React frontend; production rollout is pending on the client's side.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <h3 id="exp3-role">Freelance Software Engineer</h3>
+                    <p class="job-meta"><strong>El Arca Home</strong> · <span id="exp3-date">Jan 2024 – Feb 2026</span> · <span id="exp3-place">Retail, Córdoba</span></p>
+                    <div class="job-stack">
+                        <span class="chip">Java</span>
+                        <span class="chip">Spring Boot</span>
+                        <span class="chip">MySQL</span>
+                        <span class="chip">REST APIs</span>
+                        <span class="chip">JDBC</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">HTML/CSS</span>
+                    </div>
+                    <ul>
+                        <li id="exp3-b1">Built and maintained a multi-branch inventory and sales system in production, with real-time stock synchronization, multiple payment methods, customer accounts and reporting.</li>
+                        <li id="exp3-b2">Built the store's e-commerce website on a Spring Boot REST API (catalog, cart, stock control, MySQL backend), live in production.</li>
+                        <li id="exp3-b3">Handled the full cycle with the client: requirements, relational database design, development, deployment and user training.</li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
 
         <div id="projects" class="projects">
