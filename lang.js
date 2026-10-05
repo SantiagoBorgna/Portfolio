@@ -7,7 +7,6 @@ const translations = {
     nav_education: "Education",
     nav_stack: "Tech stack",
     nav_contact: "Contact",
-    projects_readmore: "Read more",
     contact_title: "Contact",
     contact_subtitle: "Get in touch",
     contact_phone: "Phone",
@@ -51,17 +50,20 @@ const translations = {
     "exp3-b3": "Handled the full cycle with the client: requirements, relational database design, development, deployment and user training.",
 
     // Projects
-    project1Title: "El Arca Home - Inventory system",
-    project1Desc: "A desktop application tailored for small businesses to efficiently manage inventory and daily sales across multiple branches. It includes real-time stock synchronization, sales registration with multiple payment methods, detailed reporting, and account tracking for customers. The interface is designed to be user-friendly and optimized for high-volume daily operations.",
+    "project1-title": "BIO HUB — Compliance tracking platform",
+    "project1-desc": "Multi-tenant web platform for an environmental consultancy in Córdoba, replacing an Excel-based process. Each client and the admin see their compliance status and the next tasks required by provincial regulations. REST API with JWT authentication, role-based access and per-client data isolation. Built during my professional internship; the consultancy has the demo and has not yet moved it to production.",
+    "project1-status": "Demo delivered",
 
-    project2Title: "El Arca Home - Ecommerce",
-    project2Desc: "A fully responsive and dynamic e-commerce website developed for El Arca Home, a home goods store. This platform allows users to browse a catalog of products, add items to a cart, and complete purchases. It features a clean user interface, stock control, and an admin-friendly backend connected to a live MySQL database.",
+    "project2-title": "El Arca Home — E-commerce",
+    "project2-desc": "Online store for a home goods retailer: product catalog, cart, stock control and an admin backend on a Spring Boot REST API with a MySQL database. Live in production.",
+    "project2-status": "In production",
+    "project2-visit": "Visit store",
+    "project2-code": "View code",
 
-    project3Title: "Natura - Order manager",
-    project3Desc: "A desktop application developed to manage Natura sales cycles and their associated orders. The system allows users to create and edit cycles, register client orders, and keep track of all orders within each cycle using a MySQL database. It provides a simple and organized interface to streamline order management.",
-
-    project4Title: "Dr. Natalia Molina - Professional Website",
-    project4Desc: "Modern and fully responsive landing page developed for a plastic surgery specialist. Built using HTML5, CSS3, and Vanilla JavaScript to ensure maximum performance and SEO. It implements smooth navigation, an interactive modal system with dynamic data injection for the treatment catalog, and direct integration with the WhatsApp API for appointment management.",
+    "project3-title": "El Arca Home — Inventory system",
+    "project3-desc": "Desktop application for managing inventory and daily sales across multiple branches: real-time stock synchronization, multiple payment methods, customer account tracking and reporting. In daily use by the client.",
+    "project3-status": "In production",
+    "project3-code": "View code",
 
     // Education
     edu1Title: "Software Engineering",
@@ -104,7 +106,6 @@ const translations = {
     nav_education: "Educación",
     nav_stack: "Tecnologías",
     nav_contact: "Contacto",
-    projects_readmore: "Ver más",
     contact_title: "Contacto",
     contact_subtitle: "Hablemos",
     contact_phone: "Teléfono",
@@ -148,17 +149,20 @@ const translations = {
     "exp3-b3": "Cubrí el ciclo completo con el cliente: relevamiento, diseño de base de datos relacional, desarrollo, despliegue y capacitación de usuarios.",
 
     // Projects
-    project1Title: "El Arca Home - Sistema de inventario",
-    project1Desc: "Aplicación de escritorio pensada para pequeños negocios que necesiten gestionar inventario y ventas diarias en múltiples sucursales. Incluye sincronización de stock en tiempo real, registro de ventas con múltiples métodos de pago, reportes detallados y gestión de cuentas corrientes de clientes. La interfaz es simple y optimizada para operaciones diarias de alto volumen.",
+    "project1-title": "BIO HUB — Plataforma de seguimiento de cumplimiento",
+    "project1-desc": "Plataforma web multi-tenant para una consultora ambiental de Córdoba que reemplaza un proceso en Excel. Cada cliente y el administrador ven su estado de cumplimiento y las próximas tareas exigidas por la normativa provincial. API REST con autenticación JWT, control de acceso por roles y aislamiento de datos por cliente. Desarrollada en mi práctica profesional; la consultora tiene la demo y todavía no la pasó a producción.",
+    "project1-status": "Demo entregada",
 
-    project2Title: "El Arca Home - Tienda online",
-    project2Desc: "Sitio de e-commerce completamente responsivo y dinámico desarrollado para El Arca Home, un bazar de artículos para el hogar. La plataforma permite explorar el catálogo de productos, agregar ítems al carrito y realizar compras. Incluye control de stock y un backend amigable para la administración, conectado a una base de datos MySQL en vivo.",
+    "project2-title": "El Arca Home — Tienda online",
+    "project2-desc": "Tienda online para un comercio de artículos para el hogar: catálogo de productos, carrito, control de stock y backend administrativo sobre una API REST en Spring Boot con base MySQL. En producción.",
+    "project2-status": "En producción",
+    "project2-visit": "Visitar tienda",
+    "project2-code": "Ver código",
 
-    project3Title: "Natura - Gestor de pedidos",
-    project3Desc: "Aplicación de escritorio para gestionar ciclos de ventas de Natura y sus pedidos asociados. Permite crear y editar ciclos, registrar pedidos de clientes y llevar el control de todos los pedidos dentro de cada ciclo, utilizando una base de datos MySQL. La interfaz es sencilla y organizada para optimizar la gestión de pedidos.",
-
-    project4Title: "Dra. Natalia Molina - Sitio Web Profesional",
-    project4Desc: "Landing page moderna y totalmente responsiva desarrollada para una especialista en cirugía plástica. Construida con HTML5, CSS3 y JavaScript puro para asegurar máximo rendimiento y SEO. Implementa una navegación fluida (SPA), un sistema de modales interactivos, e integración directa con la API de WhatsApp para la gestión de citas.",
+    "project3-title": "El Arca Home — Sistema de inventario",
+    "project3-desc": "Aplicación de escritorio para gestionar inventario y ventas diarias en múltiples sucursales: sincronización de stock en tiempo real, múltiples medios de pago, cuentas corrientes de clientes y reportes. En uso diario por el cliente.",
+    "project3-status": "En producción",
+    "project3-code": "Ver código",
 
     // Education
     edu1Title: "Ingeniería en Software",
@@ -226,22 +230,6 @@ function setLanguage(lang) {
     safeSet("education-title", translations[lang].educationTitle);
     safeSet("tech-title", translations[lang].techTitle);
     safeSet("contact-title", translations[lang].contactTitle);
-
-    // Projects
-    safeSet("project1-title", translations[lang].project1Title);
-    safeSet("project1-desc", translations[lang].project1Desc);
-    safeSet("project2-title", translations[lang].project2Title);
-    safeSet("project2-desc", translations[lang].project2Desc);
-    safeSet("project3-title", translations[lang].project3Title);
-    safeSet("project3-desc", translations[lang].project3Desc);
-    safeSet("project4-title", translations[lang].project4Title);
-    safeSet("project4-desc", translations[lang].project4Desc);
-
-    // Read more buttons
-    const readmoreText = translations[lang].projects_readmore;
-    document.querySelectorAll(".projects-readmore").forEach(btn => {
-      btn.textContent = readmoreText;
-    });
 
     // Education
     safeSet("edu1-title", translations[lang].edu1Title);
