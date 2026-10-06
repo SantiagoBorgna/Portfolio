@@ -18,7 +18,7 @@ const translations = {
     // About me
     "about-1": "I'm Santiago Borgna, a backend software engineer based in Córdoba, Argentina. I build business systems in Java and Spring Boot and take them from client requirements to production, including an inventory and sales system and an e-commerce store used in production by a retail client.",
     "about-2": "I currently work as a technical and functional consultant at GiGa Global, customizing Odoo ERP with Python. Earlier this year I designed and built a multi-tenant compliance platform for an environmental consultancy, with JWT authentication and role-based access. I'm now focusing on application security.",
-    "about-3": "I'm completing a B.Sc. in Software Engineering at Universidad Siglo 21 (GPA 9.33/10) and I'm open to remote opportunities.",
+    "about-3": "I'm completing a B.Sc. in Software Engineering at Universidad Siglo 21 and I'm open to remote opportunities.",
 
     // Experience
     "experience-title": "EXPERIENCE",
@@ -107,7 +107,7 @@ const translations = {
     // About me
     "about-1": "Soy Santiago Borgna, desarrollador backend de Córdoba, Argentina. Construyo sistemas de gestión en Java y Spring Boot y los llevo desde el relevamiento con el cliente hasta producción, incluyendo un sistema de inventario y ventas y una tienda online que un cliente del rubro retail usa en producción.",
     "about-2": "Actualmente trabajo como consultor técnico y funcional en GiGa Global, personalizando el ERP Odoo con Python. A comienzos de este año diseñé y desarrollé una plataforma multi-tenant de cumplimiento normativo para una consultora ambiental, con autenticación JWT y control de acceso por roles. Hoy me estoy enfocando en la seguridad de aplicaciones.",
-    "about-3": "Curso la Ingeniería en Software en la Universidad Siglo 21 (promedio 9,33/10) y estoy abierto a oportunidades remotas.",
+    "about-3": "Curso la Ingeniería en Software en la Universidad Siglo 21 y estoy abierto a oportunidades remotas.",
 
     // Experience
     "experience-title": "EXPERIENCIA",
